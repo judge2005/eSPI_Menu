@@ -6,7 +6,7 @@ A menu system for TFTs that uses the TFT_eSPI library
 
 # Description
 
-Provides a one-level menu that provides:
+A one-level menu that provides:
 
 * A title
 * Items
@@ -34,5 +34,7 @@ Use as follows:
    1. You can't go beyond the top and bottom of the menu.
    2. Scrolling the menu to fit the selected item in the space available,
    3. Skipping disabled items, drawing the scroll arrows if any.
-6. Provide some means for the user to exit the menu. Nothing special here, just overwrite the display with whatever you normally display.
-7. If you re-use the menu for different contents, or you change the contents, call reset() before you modify it and then fully re-initialize the contents.
+6. Provide some means for the user to exit the menu and for your code to figure out if a selection was made. I use a button click for making a selection and a long press for just exiting without a selection.
+7. _Exiting_ the menu doesn't mean much, it won't be undrawn automatically, it is up to you to make it invisible somehow.
+8. You can retrieve whatever item is/was selected either by item number or by item label.
+9. If you re-use the menu for different contents, or you change the contents, call reset() before you modify it and then fully re-initialize the contents.
