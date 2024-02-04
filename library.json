@@ -1,0 +1,11 @@
+{
+  "name": "eSPI_Menu",
+  "keywords": "TFT_eSPI,menu,TFT",
+  "description": "A menu system that leverages the TFT_eSPI library",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/judge2005/eSPI_Menu.git"
+  },
+  "version": "0.1"
+}
